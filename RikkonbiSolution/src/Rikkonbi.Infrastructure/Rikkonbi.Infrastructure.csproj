@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20190917151830_CreateDeviceCategoriesAndDevicesTables.cs" />
+    <Compile Remove="Migrations\20190917151830_CreateDeviceCategoriesAndDevicesTables.Designer.cs" />
+    <Compile Remove="Migrations\20190917155237_CreateBorrowTable.cs" />
+    <Compile Remove="Migrations\20190917155237_CreateBorrowTable.Designer.cs" />
+    <Compile Remove="Migrations\20190919061554_addRelationshipOfBorrowsAndDevicesTables.cs" />
+    <Compile Remove="Migrations\20190919061554_addRelationshipOfBorrowsAndDevicesTables.Designer.cs" />
+    <Compile Remove="Migrations\20190919063737_addFieldBorrowOnAndReturnOnForBorrowsTable.cs" />
+    <Compile Remove="Migrations\20190919063737_addFieldBorrowOnAndReturnOnForBorrowsTable.Designer.cs" />
+    <Compile Remove="Migrations\20190919073157_ss.cs" />
+    <Compile Remove="Migrations\20190919073157_ss.Designer.cs" />
+    <Compile Remove="Migrations\20190919080231_check.cs" />
+    <Compile Remove="Migrations\20190919080231_check.Designer.cs" />
+    <Compile Remove="Migrations\20190919082333_c.cs" />
+    <Compile Remove="Migrations\20190919082333_c.Designer.cs" />
+    <Compile Remove="Migrations\20190919083951_c.cs" />
+    <Compile Remove="Migrations\20190919083951_c.Designer.cs" />
+    <Compile Remove="Migrations\20190919084723_c.cs" />
+    <Compile Remove="Migrations\20190919084723_c.Designer.cs" />
+    <Compile Remove="Migrations\20190919085537_c.cs" />
+    <Compile Remove="Migrations\20190919085537_c.Designer.cs" />
+    <Compile Remove="Migrations\20190919090147_c.cs" />
+    <Compile Remove="Migrations\20190919090147_c.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Rikkonbi.Core\Rikkonbi.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.3" />
+    <PackageReference Include="Google.Apis.Auth.AspNetCore" Version="1.40.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
